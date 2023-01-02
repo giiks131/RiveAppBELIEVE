@@ -11,6 +11,19 @@
 		F2011E4E29633C4700ECBE32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011E4D29633C4700ECBE32 /* ContentView.swift */; };
 		F2011E5029633C4900ECBE32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2011E4F29633C4900ECBE32 /* Assets.xcassets */; };
 		F2011E5329633C4900ECBE32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2011E5229633C4900ECBE32 /* Preview Assets.xcassets */; };
+		F2011E6129633CA000ECBE32 /* house.riv in Resources */ = {isa = PBXBuildFile; fileRef = F2011E5A29633CA000ECBE32 /* house.riv */; };
+		F2011E6229633CA000ECBE32 /* confetti.riv in Resources */ = {isa = PBXBuildFile; fileRef = F2011E5B29633CA000ECBE32 /* confetti.riv */; };
+		F2011E6329633CA000ECBE32 /* check.riv in Resources */ = {isa = PBXBuildFile; fileRef = F2011E5C29633CA000ECBE32 /* check.riv */; };
+		F2011E6429633CA000ECBE32 /* menu_button.riv in Resources */ = {isa = PBXBuildFile; fileRef = F2011E5D29633CA000ECBE32 /* menu_button.riv */; };
+		F2011E6529633CA000ECBE32 /* shapes.riv in Resources */ = {isa = PBXBuildFile; fileRef = F2011E5E29633CA000ECBE32 /* shapes.riv */; };
+		F2011E6629633CA000ECBE32 /* button.riv in Resources */ = {isa = PBXBuildFile; fileRef = F2011E5F29633CA000ECBE32 /* button.riv */; };
+		F2011E6729633CA000ECBE32 /* icons.riv in Resources */ = {isa = PBXBuildFile; fileRef = F2011E6029633CA000ECBE32 /* icons.riv */; };
+		F2011E6A29633CD800ECBE32 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = F2011E6929633CD800ECBE32 /* RiveRuntime */; };
+		F2011E6C29633CE900ECBE32 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011E6B29633CE900ECBE32 /* OnboardingView.swift */; };
+		F2011E71296352EA00ECBE32 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2011E6E296352EA00ECBE32 /* Inter-Regular.ttf */; };
+		F2011E72296352EA00ECBE32 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2011E6F296352EA00ECBE32 /* Poppins-Bold.ttf */; };
+		F2011E73296352EA00ECBE32 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2011E70296352EA00ECBE32 /* Inter-SemiBold.ttf */; };
+		F2011E76296353FA00ECBE32 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011E75296353FA00ECBE32 /* CustomFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +32,19 @@
 		F2011E4D29633C4700ECBE32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F2011E4F29633C4900ECBE32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2011E5229633C4900ECBE32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F2011E5A29633CA000ECBE32 /* house.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = house.riv; sourceTree = "<group>"; };
+		F2011E5B29633CA000ECBE32 /* confetti.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = confetti.riv; sourceTree = "<group>"; };
+		F2011E5C29633CA000ECBE32 /* check.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = check.riv; sourceTree = "<group>"; };
+		F2011E5D29633CA000ECBE32 /* menu_button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = menu_button.riv; sourceTree = "<group>"; };
+		F2011E5E29633CA000ECBE32 /* shapes.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = shapes.riv; sourceTree = "<group>"; };
+		F2011E5F29633CA000ECBE32 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = button.riv; sourceTree = "<group>"; };
+		F2011E6029633CA000ECBE32 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
+		F2011E6B29633CE900ECBE32 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		F2011E6E296352EA00ECBE32 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		F2011E6F296352EA00ECBE32 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		F2011E70296352EA00ECBE32 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		F2011E742963530800ECBE32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F2011E75296353FA00ECBE32 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2011E6A29633CD800ECBE32 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +78,14 @@
 		F2011E4A29633C4700ECBE32 /* RiveAppBELIEVE */ = {
 			isa = PBXGroup;
 			children = (
+				F2011E742963530800ECBE32 /* Info.plist */,
 				F2011E4B29633C4700ECBE32 /* RiveAppBELIEVEApp.swift */,
 				F2011E4D29633C4700ECBE32 /* ContentView.swift */,
+				F2011E6B29633CE900ECBE32 /* OnboardingView.swift */,
+				F2011E75296353FA00ECBE32 /* CustomFont.swift */,
 				F2011E4F29633C4900ECBE32 /* Assets.xcassets */,
+				F2011E6D296352EA00ECBE32 /* Fonts */,
+				F2011E5929633CA000ECBE32 /* RiveAssets */,
 				F2011E5129633C4900ECBE32 /* Preview Content */,
 			);
 			path = RiveAppBELIEVE;
@@ -65,6 +97,30 @@
 				F2011E5229633C4900ECBE32 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2011E5929633CA000ECBE32 /* RiveAssets */ = {
+			isa = PBXGroup;
+			children = (
+				F2011E5A29633CA000ECBE32 /* house.riv */,
+				F2011E5B29633CA000ECBE32 /* confetti.riv */,
+				F2011E5C29633CA000ECBE32 /* check.riv */,
+				F2011E5D29633CA000ECBE32 /* menu_button.riv */,
+				F2011E5E29633CA000ECBE32 /* shapes.riv */,
+				F2011E5F29633CA000ECBE32 /* button.riv */,
+				F2011E6029633CA000ECBE32 /* icons.riv */,
+			);
+			path = RiveAssets;
+			sourceTree = "<group>";
+		};
+		F2011E6D296352EA00ECBE32 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F2011E6E296352EA00ECBE32 /* Inter-Regular.ttf */,
+				F2011E6F296352EA00ECBE32 /* Poppins-Bold.ttf */,
+				F2011E70296352EA00ECBE32 /* Inter-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +139,9 @@
 			dependencies = (
 			);
 			name = RiveAppBELIEVE;
+			packageProductDependencies = (
+				F2011E6929633CD800ECBE32 /* RiveRuntime */,
+			);
 			productName = RiveAppBELIEVE;
 			productReference = F2011E4829633C4700ECBE32 /* RiveAppBELIEVE.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +170,9 @@
 				Base,
 			);
 			mainGroup = F2011E3F29633C4700ECBE32;
+			packageReferences = (
+				F2011E6829633CD800ECBE32 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = F2011E4929633C4700ECBE32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +187,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2011E73296352EA00ECBE32 /* Inter-SemiBold.ttf in Resources */,
+				F2011E6529633CA000ECBE32 /* shapes.riv in Resources */,
+				F2011E6329633CA000ECBE32 /* check.riv in Resources */,
 				F2011E5329633C4900ECBE32 /* Preview Assets.xcassets in Resources */,
+				F2011E6429633CA000ECBE32 /* menu_button.riv in Resources */,
+				F2011E6129633CA000ECBE32 /* house.riv in Resources */,
+				F2011E6629633CA000ECBE32 /* button.riv in Resources */,
+				F2011E71296352EA00ECBE32 /* Inter-Regular.ttf in Resources */,
+				F2011E72296352EA00ECBE32 /* Poppins-Bold.ttf in Resources */,
 				F2011E5029633C4900ECBE32 /* Assets.xcassets in Resources */,
+				F2011E6229633CA000ECBE32 /* confetti.riv in Resources */,
+				F2011E6729633CA000ECBE32 /* icons.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2011E6C29633CE900ECBE32 /* OnboardingView.swift in Sources */,
+				F2011E76296353FA00ECBE32 /* CustomFont.swift in Sources */,
 				F2011E4E29633C4700ECBE32 /* ContentView.swift in Sources */,
 				F2011E4C29633C4700ECBE32 /* RiveAppBELIEVEApp.swift in Sources */,
 			);
@@ -270,6 +344,7 @@
 				DEVELOPMENT_TEAM = 7HUT629824;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RiveAppBELIEVE/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +374,7 @@
 				DEVELOPMENT_TEAM = 7HUT629824;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RiveAppBELIEVE/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +415,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F2011E6829633CD800ECBE32 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F2011E6929633CD800ECBE32 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2011E6829633CD800ECBE32 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F2011E4029633C4700ECBE32 /* Project object */;
 }
