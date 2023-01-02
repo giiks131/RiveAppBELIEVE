@@ -26,6 +26,7 @@
 		F2011E76296353FA00ECBE32 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011E75296353FA00ECBE32 /* CustomFont.swift */; };
 		F2011E7C29637ADF00ECBE32 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011E7B29637ADF00ECBE32 /* SignInView.swift */; };
 		F2011E7E29637DD800ECBE32 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011E7D29637DD800ECBE32 /* CustomTextField.swift */; };
+		F2011E802963808D00ECBE32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011E7F2963808D00ECBE32 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		F2011E75296353FA00ECBE32 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		F2011E7B29637ADF00ECBE32 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		F2011E7D29637DD800ECBE32 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F2011E7F2963808D00ECBE32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				F2011E4B29633C4700ECBE32 /* RiveAppBELIEVEApp.swift */,
 				F2011E772963701500ECBE32 /* LoginView */,
 				F2011E782963702E00ECBE32 /* Models */,
+				F2011E7F2963808D00ECBE32 /* Extensions.swift */,
 				F2011E4F29633C4900ECBE32 /* Assets.xcassets */,
 				F2011E6D296352EA00ECBE32 /* Fonts */,
 				F2011E5929633CA000ECBE32 /* RiveAssets */,
@@ -253,6 +256,7 @@
 				F2011E4E29633C4700ECBE32 /* ContentView.swift in Sources */,
 				F2011E4C29633C4700ECBE32 /* RiveAppBELIEVEApp.swift in Sources */,
 				F2011E7C29637ADF00ECBE32 /* SignInView.swift in Sources */,
+				F2011E802963808D00ECBE32 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

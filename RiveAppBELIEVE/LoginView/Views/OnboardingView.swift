@@ -9,17 +9,43 @@ import SwiftUI
 import RiveRuntime
 
 struct OnboardingView: View {
+    @State var showModal = false
     let buttonStart = RiveViewModel(fileName: "button")
+   
     
     var body: some View {
         ZStack {
            background
-            buttonCourse
+            loginContent
+                .offset(y: showModal ? -50 : 0)
+            
+            Color("Shadow")
+                .opacity(showModal ? 0.4 : 0)
+                .ignoresSafeArea()
+            
+            if showModal {
+                SignInView()
+                    .transition(.move(edge: .top).combined(with: .opacity))
+                    .overlay(
+                        Button {
+                            withAnimation(.spring()) {
+                                showModal = false
+                            }
+                        } label: {
+                            Image(systemName: "xmark")
+                                .frame(width: 36, height: 36)
+                                .foregroundColor(.black)
+                                .background(.white)
+                                .mask(Circle())
+                            .shadow(color: Color("Shadow").opacity(0.3), radius: 5, x: 0, y: 3)
+                        }
+                            .frame(maxHeight: .infinity, alignment: .bottom)
+                    )
+                    .zIndex(1)
+            }
             
         }
     }
-    
-    
 }
 
 
@@ -36,7 +62,7 @@ extension OnboardingView {
             )
     }
     
-    var buttonCourse: some View {
+    var loginContent: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Learn design & code")
                 .font(.custom("Poppins Bold", size: 60, relativeTo: .largeTitle))
@@ -65,6 +91,11 @@ extension OnboardingView {
                 )
                 .onTapGesture {
                     buttonStart.play(animationName: "active")
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.8, execute: {
+                        withAnimation(.spring()) {
+                            showModal = true
+                        }
+                    })
             }
             
             Text("Purchase includes access to 30+ courses, 240+ premium tutorials, 120+ hours of videos, source files and certificates.")
