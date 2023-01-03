@@ -89,13 +89,13 @@
 				F2011E742963530800ECBE32 /* Info.plist */,
 				F2011E4B29633C4700ECBE32 /* RiveAppBELIEVEApp.swift */,
 				F2011E772963701500ECBE32 /* LoginView */,
+				F2D94E6D2964A7A6001C44F3 /* TabBar.swift */,
 				F2011E782963702E00ECBE32 /* Styles */,
 				F2011E4F29633C4900ECBE32 /* Assets.xcassets */,
 				F2D94E6829649899001C44F3 /* SideMenuView */,
 				F2011E6D296352EA00ECBE32 /* Fonts */,
 				F2011E5929633CA000ECBE32 /* RiveAssets */,
 				F2011E5129633C4900ECBE32 /* Preview Content */,
-				F2D94E6D2964A7A6001C44F3 /* TabBar.swift */,
 			);
 			path = RiveAppBELIEVE;
 			sourceTree = "<group>";
