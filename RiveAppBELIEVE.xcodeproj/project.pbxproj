@@ -27,6 +27,9 @@
 		F2011E7C29637ADF00ECBE32 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011E7B29637ADF00ECBE32 /* SignInView.swift */; };
 		F2011E7E29637DD800ECBE32 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011E7D29637DD800ECBE32 /* CustomTextField.swift */; };
 		F2011E802963808D00ECBE32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011E7F2963808D00ECBE32 /* Extensions.swift */; };
+		F25DD42C29663B2900AE63CF /* CourseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DD42A29663B2900AE63CF /* CourseSection.swift */; };
+		F25DD42D29663B2900AE63CF /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DD42B29663B2900AE63CF /* Course.swift */; };
+		F25DD42F29663B5200AE63CF /* VCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DD42E29663B5200AE63CF /* VCard.swift */; };
 		F2D94E6E2964A7A6001C44F3 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D94E6D2964A7A6001C44F3 /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,9 @@
 		F2011E7B29637ADF00ECBE32 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		F2011E7D29637DD800ECBE32 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		F2011E7F2963808D00ECBE32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F25DD42A29663B2900AE63CF /* CourseSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseSection.swift; sourceTree = "<group>"; };
+		F25DD42B29663B2900AE63CF /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		F25DD42E29663B5200AE63CF /* VCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCard.swift; sourceTree = "<group>"; };
 		F2D94E6D2964A7A6001C44F3 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,8 +96,10 @@
 				F2011E4B29633C4700ECBE32 /* RiveAppBELIEVEApp.swift */,
 				F2011E772963701500ECBE32 /* LoginView */,
 				F2D94E6D2964A7A6001C44F3 /* TabBar.swift */,
+				F25DD42E29663B5200AE63CF /* VCard.swift */,
 				F2011E782963702E00ECBE32 /* Styles */,
 				F2011E4F29633C4900ECBE32 /* Assets.xcassets */,
+				F25DD42929663B2900AE63CF /* Model */,
 				F2D94E6829649899001C44F3 /* SideMenuView */,
 				F2011E6D296352EA00ECBE32 /* Fonts */,
 				F2011E5929633CA000ECBE32 /* RiveAssets */,
@@ -166,6 +174,15 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F25DD42929663B2900AE63CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F25DD42A29663B2900AE63CF /* CourseSection.swift */,
+				F25DD42B29663B2900AE63CF /* Course.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F2D94E6829649899001C44F3 /* SideMenuView */ = {
@@ -279,11 +296,14 @@
 			files = (
 				F2011E6C29633CE900ECBE32 /* OnboardingView.swift in Sources */,
 				F2011E76296353FA00ECBE32 /* CustomFont.swift in Sources */,
+				F25DD42D29663B2900AE63CF /* Course.swift in Sources */,
 				F2011E7E29637DD800ECBE32 /* CustomTextField.swift in Sources */,
 				F2D94E6E2964A7A6001C44F3 /* TabBar.swift in Sources */,
+				F25DD42F29663B5200AE63CF /* VCard.swift in Sources */,
 				F2011E4E29633C4700ECBE32 /* ContentView.swift in Sources */,
 				F2011E4C29633C4700ECBE32 /* RiveAppBELIEVEApp.swift in Sources */,
 				F2011E7C29637ADF00ECBE32 /* SignInView.swift in Sources */,
+				F25DD42C29663B2900AE63CF /* CourseSection.swift in Sources */,
 				F2011E802963808D00ECBE32 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
