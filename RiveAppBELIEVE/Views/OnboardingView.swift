@@ -10,12 +10,14 @@ import RiveRuntime
 
 struct OnboardingView: View {
     @State var showModal = false
+    @Binding var showLogin: Bool
+    
     let buttonStart = RiveViewModel(fileName: "button")
-   
+    
     
     var body: some View {
         ZStack {
-           background
+            background
             loginContent
                 .offset(y: showModal ? -50 : 0)
             
@@ -37,13 +39,29 @@ struct OnboardingView: View {
                                 .foregroundColor(.black)
                                 .background(.white)
                                 .mask(Circle())
-                            .shadow(color: Color("Shadow").opacity(0.3), radius: 5, x: 0, y: 3)
+                                .shadow(color: Color("Shadow").opacity(0.3), radius: 5, x: 0, y: 3)
                         }
                             .frame(maxHeight: .infinity, alignment: .bottom)
                     )
                     .zIndex(1)
             }
             
+            Button {
+                withAnimation {
+                    showLogin = false
+                }
+            }
+        label: {
+            Image(systemName: "xmark")
+                .frame(width: 36, height: 36)
+                .background(.black)
+                .foregroundColor(.white)
+                .mask(Circle())
+                .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 10)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+        .padding()
+        .offset(y: showModal ? -200 : 80)
         }
     }
 }
@@ -74,7 +92,7 @@ extension OnboardingView {
                 .frame(maxWidth: .infinity, alignment: .leading)
             
             Spacer()
-              
+            
             buttonStart.view()
                 .frame(width: 236, height: 64)
                 .overlay(
@@ -96,7 +114,7 @@ extension OnboardingView {
                             showModal = true
                         }
                     })
-            }
+                }
             
             Text("Purchase includes access to 30+ courses, 240+ premium tutorials, 120+ hours of videos, source files and certificates.")
                 .customFont(.footnote)
@@ -111,6 +129,6 @@ extension OnboardingView {
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        OnboardingView(showLogin: .constant(true))
     }
 }
