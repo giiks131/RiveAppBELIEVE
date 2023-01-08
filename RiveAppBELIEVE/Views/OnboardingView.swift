@@ -82,7 +82,7 @@ extension OnboardingView {
     
     var loginContent: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Learn design & code")
+            Text("Learn design \n& code")
                 .font(.custom("Poppins Bold", size: 60, relativeTo: .largeTitle))
                 .frame(width: 260, alignment: .leading)
             
@@ -96,7 +96,7 @@ extension OnboardingView {
             buttonStart.view()
                 .frame(width: 236, height: 64)
                 .overlay(
-                    Label("Start the course", systemImage: "arrow.forward")
+                    Label("Start the journey", systemImage: "arrow.forward")
                         .offset(x: 4, y: 4)
                         .font(.headline)
                 )

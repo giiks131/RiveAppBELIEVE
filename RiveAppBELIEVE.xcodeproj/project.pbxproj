@@ -34,6 +34,8 @@
 		F25DD4332967148600AE63CF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DD4322967148600AE63CF /* HomeView.swift */; };
 		F25DD43529671AAB00AE63CF /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DD43429671AAB00AE63CF /* SideMenuView.swift */; };
 		F25DD437296722B100AE63CF /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DD436296722B100AE63CF /* MenuRow.swift */; };
+		F25DF262296B71A000100728 /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DF261296B71A000100728 /* MenuItems.swift */; };
+		F25DF264296B738100100728 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DF263296B738100100728 /* MenuItem.swift */; };
 		F2D94E6E2964A7A6001C44F3 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D94E6D2964A7A6001C44F3 /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,8 @@
 		F25DD4322967148600AE63CF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F25DD43429671AAB00AE63CF /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		F25DD436296722B100AE63CF /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
+		F25DF261296B71A000100728 /* MenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
+		F25DF263296B738100100728 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		F2D94E6D2964A7A6001C44F3 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,6 +182,8 @@
 		F25DD42929663B2900AE63CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F25DF263296B738100100728 /* MenuItem.swift */,
+				F25DF261296B71A000100728 /* MenuItems.swift */,
 				F25DD42A29663B2900AE63CF /* CourseSection.swift */,
 				F25DD42B29663B2900AE63CF /* Course.swift */,
 			);
@@ -290,7 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25DF264296B738100100728 /* MenuItem.swift in Sources */,
 				F25DD4312967137600AE63CF /* HCard.swift in Sources */,
+				F25DF262296B71A000100728 /* MenuItems.swift in Sources */,
 				F2011E6C29633CE900ECBE32 /* OnboardingView.swift in Sources */,
 				F25DD4332967148600AE63CF /* HomeView.swift in Sources */,
 				F2011E76296353FA00ECBE32 /* CustomFont.swift in Sources */,

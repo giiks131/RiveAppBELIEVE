@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MenuRow: View {
+    @StateObject var menus = MenuItems()
     @Binding var selectedMenu: SelectedMenu
     var item: MenuItem
     
@@ -41,8 +42,8 @@ struct MenuRow: View {
     }
 }
 
-struct MenuRow_Previews: PreviewProvider {
-    static var previews: some View {
-        MenuRow(selectedMenu: .constant(.home), item: menuItems[0])
-    }
-}
+//struct MenuRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MenuRow(selectedMenu: .constant(.home), item: menus.menuItems[0])
+//    }
+//}
