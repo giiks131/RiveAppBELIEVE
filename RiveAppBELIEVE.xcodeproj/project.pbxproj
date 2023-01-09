@@ -108,8 +108,6 @@
 				F2011E4B29633C4700ECBE32 /* RiveAppBELIEVEApp.swift */,
 				F2011E7A2963708B00ECBE32 /* ViewModel */,
 				F2011E792963703A00ECBE32 /* Views */,
-				F25DD439296741BE00AE63CF /* Navigation */,
-				F25DD4382967419E00AE63CF /* Components */,
 				F25DD42929663B2900AE63CF /* Model */,
 				F2011E782963702E00ECBE32 /* Styles */,
 				F2011E4F29633C4900ECBE32 /* Assets.xcassets */,
@@ -165,6 +163,8 @@
 		F2011E792963703A00ECBE32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F25DD439296741BE00AE63CF /* Navigation */,
+				F25DD4382967419E00AE63CF /* Components */,
 				F25DD4322967148600AE63CF /* HomeView.swift */,
 				F2011E6B29633CE900ECBE32 /* OnboardingView.swift */,
 				F2011E7B29637ADF00ECBE32 /* SignInView.swift */,
@@ -203,8 +203,8 @@
 		F25DD439296741BE00AE63CF /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				F25DD43429671AAB00AE63CF /* SideMenuView.swift */,
 				F2011E4D29633C4700ECBE32 /* ContentView.swift */,
+				F25DD43429671AAB00AE63CF /* SideMenuView.swift */,
 				F2D94E6D2964A7A6001C44F3 /* TabBar.swift */,
 			);
 			path = Navigation;
@@ -220,6 +220,7 @@
 				F2011E4429633C4700ECBE32 /* Sources */,
 				F2011E4529633C4700ECBE32 /* Frameworks */,
 				F2011E4629633C4700ECBE32 /* Resources */,
+				F280B32A296C1C6A00311DAD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -290,6 +291,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F280B32A296C1C6A00311DAD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F2011E4429633C4700ECBE32 /* Sources */ = {

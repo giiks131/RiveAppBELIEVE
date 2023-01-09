@@ -13,13 +13,13 @@ struct SignInView: View {
     @State var password = ""
     @State var isLoading = false
     @Binding var showModal: Bool
-    
+
     let check = RiveViewModel(fileName: "check", stateMachineName: "State Machine 1")
     let confetti = RiveViewModel(fileName: "confetti", stateMachineName: "State Machine 1")
-    
+
     func logIn() {
         isLoading = true
-        
+
         if email != "" {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 check.triggerInput("Check")
@@ -42,14 +42,14 @@ struct SignInView: View {
             }
         }
     }
-    
+
     var body: some View {
         VStack(spacing: 24) {
             Text("Sign In")
                 .customFont(.largeTitle)
             Text("Access to 240+ hours of content. Learn design and code, by building real apps with React and Swift.")
                 .customFont(.headline)
-            
+
             VStack(alignment: .leading) {
                 Text("Email")
                     .customFont(.subheadline)
@@ -57,7 +57,7 @@ struct SignInView: View {
                 TextField("", text: $email)
                     .customTextField()
             }
-            
+
             VStack(alignment: .leading) {
                 Text("Password")
                     .customFont(.subheadline)
@@ -65,7 +65,7 @@ struct SignInView: View {
                 SecureField("", text: $password)
                     .customTextField(image: Image("Icon Lock"))
             }
-            
+
             Button {
                logIn()
             } label: {
@@ -83,17 +83,17 @@ struct SignInView: View {
                     .cornerRadius(8, corners: [.topLeft])
                 .shadow(color: Color("F77D8E").opacity(0.5), radius: 20, x: 0, y: 10)
             }
-            
+
             HStack {
                 Rectangle().frame(height: 1).opacity(0.1)
                 Text("OR").customFont(.subheadline2).foregroundColor(.black.opacity(0.3))
                 Rectangle().frame(height: 1).opacity(0.1)
             }
-            
+
             Text("Sign up with Email, Apple or Google")
                 .customFont(.subheadline)
                 .foregroundColor(.secondary)
-            
+
             HStack {
                 Image("Logo Email")
                 Spacer()
@@ -108,7 +108,10 @@ struct SignInView: View {
         .shadow(color: Color("Shadow").opacity(0.3), radius: 5, x: 0, y: 3)
         .shadow(color: Color("Shadow").opacity(0.3), radius: 30, x: 0, y: 30)
         .overlay(RoundedRectangle(cornerRadius: 20, style: .continuous)
-            .stroke(.linearGradient(colors: [.white.opacity(0.8), .white.opacity(0.1)], startPoint: .topLeading, endPoint: .bottomTrailing))
+            .stroke(.linearGradient(
+                colors: [.white.opacity(0.8), .white.opacity(0.1)],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing))
         )
         .padding()
         .overlay(
@@ -123,7 +126,7 @@ struct SignInView: View {
                     .allowsHitTesting(false)
             }
         )
-        
+
     }
 }
 

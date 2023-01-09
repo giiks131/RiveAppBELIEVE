@@ -12,19 +12,19 @@ struct ContentView: View {
     @AppStorage("selectedTab") var selectedTab: Tab = .chat
     @State var isOpen = false
     @State var showLogin = false
-    
+
     let button = RiveViewModel(fileName: "menu_button", stateMachineName: "State Machine", autoPlay: false)
-    
+
     var body: some View {
         ZStack {
             Color("Background 2")
                 .ignoresSafeArea()
-            
+
             SideMenuView()
                 .opacity(isOpen ? 1 : 0)
                 .offset(x: isOpen ? 0 : -300)
                 .rotation3DEffect(.degrees(isOpen ? 0 : 30), axis: (x: 0, y: 1, z: 0))
-            
+
             Group {
                 switch selectedTab {
                 case .chat:
@@ -51,7 +51,7 @@ struct ContentView: View {
             .scaleEffect(isOpen ? 0.9 : 1)
             .scaleEffect(showLogin ? 0.92 : 1)
             .ignoresSafeArea()
-            
+
             Image(systemName: "person")
                 .frame(width: 36, height: 36)
                 .background(.white)
@@ -66,7 +66,7 @@ struct ContentView: View {
                 .padding()
                 .offset(y: 4)
                 .offset(x: isOpen ? 100 : 0)
-            
+
             button.view()
                 .frame(width: 44, height: 44)
                 .mask(Circle())
@@ -83,11 +83,12 @@ struct ContentView: View {
                 .onChange(of: isOpen) { newValue in
                     if newValue {
                         UIApplication.shared.setStatusBarStyle(.lightContent, animated: true)
+
                     } else {
                         UIApplication.shared.setStatusBarStyle(.darkContent, animated: true)
                     }
                 }
-            
+
             TabBar()
                 .offset(y: isOpen ? 300 : 0)
                 .offset(y: showLogin ? 200 : 0)
@@ -101,7 +102,7 @@ struct ContentView: View {
                     .allowsHitTesting(false)
                     )
                 .ignoresSafeArea()
-            
+
             if showLogin {
                 OnboardingView(showLogin: $showLogin)
                     .background(.white)

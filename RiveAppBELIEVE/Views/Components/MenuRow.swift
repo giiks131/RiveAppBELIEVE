@@ -11,13 +11,13 @@ struct MenuRow: View {
     @StateObject var menus = MenuItems()
     @Binding var selectedMenu: SelectedMenu
     var item: MenuItem
-    
+
     var body: some View {
         HStack(spacing: 14) {
             item.icon.view()
                 .frame(width: 32, height: 32)
                 .opacity(0.6)
-            
+
             Text(item.text)
                 .customFont(.headline)
         }
@@ -42,8 +42,8 @@ struct MenuRow: View {
     }
 }
 
-//struct MenuRow_Previews: PreviewProvider {
+// struct MenuRow_Previews: PreviewProvider {
 //    static var previews: some View {
 //        MenuRow(selectedMenu: .constant(.home), item: menus.menuItems[0])
 //    }
-//}
+// }

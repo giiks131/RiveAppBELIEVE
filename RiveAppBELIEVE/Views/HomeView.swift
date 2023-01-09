@@ -12,7 +12,7 @@ struct HomeView: View {
         ZStack {
             Color("Background")
                 .ignoresSafeArea()
-            
+
             ScrollView {
                 content
             }
@@ -27,7 +27,7 @@ extension HomeView {
                 .customFont(.largeTitle)
                 .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.horizontal, 20)
-            
+
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {
                     ForEach(courses) { course in
@@ -37,11 +37,11 @@ extension HomeView {
                 .padding(20)
                 .padding(.bottom, 10)
             }
-            
+
             Text("Recent")
                 .customFont(.title3)
                 .padding(.horizontal, 20)
-            
+
             VStack(spacing: 20) {
                 ForEach(courseSections) { section in
                     HCard(section: section)

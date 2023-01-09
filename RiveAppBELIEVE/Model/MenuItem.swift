@@ -10,7 +10,7 @@ import RiveRuntime
 
 struct MenuItem: Identifiable {
     var id = UUID()
-    
+
     var text: String
     var icon: RiveViewModel
     var menu: SelectedMenu

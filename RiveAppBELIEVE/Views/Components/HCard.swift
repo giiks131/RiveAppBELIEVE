@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HCard: View {
     var section: CourseSection
-    
+
     var body: some View {
         HStack(spacing: 20) {
             VStack(alignment: .leading, spacing: 8) {
@@ -17,7 +17,7 @@ struct HCard: View {
                     .customFont(.title2)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .layoutPriority(1)
-                
+
                 Text(section.caption)
                     .customFont(.body)
             }

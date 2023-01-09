@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CustomFont: ViewModifier {
     var textStyle: TextStyle
-    
     var name: String {
         switch textStyle {
         case .largeTitle, .title, .title2, .title3:
@@ -20,7 +19,6 @@ struct CustomFont: ViewModifier {
             return "Inter SemiBold"
         }
     }
-    
     var size: CGFloat {
         switch textStyle {
         case .largeTitle:
@@ -49,7 +47,7 @@ struct CustomFont: ViewModifier {
             return 12
         }
     }
-    
+
     var relative: Font.TextStyle {
         switch textStyle {
         case .largeTitle:
@@ -78,7 +76,7 @@ struct CustomFont: ViewModifier {
             return .caption
         }
     }
-    
+
     func body(content: Content) -> some View {
         content.font(.custom(name, size: size, relativeTo: relative))
     }
