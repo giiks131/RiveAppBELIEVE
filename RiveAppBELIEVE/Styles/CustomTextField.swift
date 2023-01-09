@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CustomTextField: ViewModifier {
     var image: Image
-    
+
     func body(content: Content) -> some View {
         content
             .padding(15)
@@ -35,4 +35,3 @@ extension View {
         modifier(CustomTextField(image: image))
     }
 }
-

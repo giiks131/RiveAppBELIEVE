@@ -27,6 +27,16 @@
 		F2011E7C29637ADF00ECBE32 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011E7B29637ADF00ECBE32 /* SignInView.swift */; };
 		F2011E7E29637DD800ECBE32 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011E7D29637DD800ECBE32 /* CustomTextField.swift */; };
 		F2011E802963808D00ECBE32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2011E7F2963808D00ECBE32 /* Extensions.swift */; };
+		F25DD42C29663B2900AE63CF /* CourseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DD42A29663B2900AE63CF /* CourseSection.swift */; };
+		F25DD42D29663B2900AE63CF /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DD42B29663B2900AE63CF /* Course.swift */; };
+		F25DD42F29663B5200AE63CF /* VCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DD42E29663B5200AE63CF /* VCard.swift */; };
+		F25DD4312967137600AE63CF /* HCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DD4302967137600AE63CF /* HCard.swift */; };
+		F25DD4332967148600AE63CF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DD4322967148600AE63CF /* HomeView.swift */; };
+		F25DD43529671AAB00AE63CF /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DD43429671AAB00AE63CF /* SideMenuView.swift */; };
+		F25DD437296722B100AE63CF /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DD436296722B100AE63CF /* MenuRow.swift */; };
+		F25DF262296B71A000100728 /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DF261296B71A000100728 /* MenuItems.swift */; };
+		F25DF264296B738100100728 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DF263296B738100100728 /* MenuItem.swift */; };
+		F2D94E6E2964A7A6001C44F3 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D94E6D2964A7A6001C44F3 /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +61,16 @@
 		F2011E7B29637ADF00ECBE32 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		F2011E7D29637DD800ECBE32 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		F2011E7F2963808D00ECBE32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F25DD42A29663B2900AE63CF /* CourseSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseSection.swift; sourceTree = "<group>"; };
+		F25DD42B29663B2900AE63CF /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		F25DD42E29663B5200AE63CF /* VCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCard.swift; sourceTree = "<group>"; };
+		F25DD4302967137600AE63CF /* HCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCard.swift; sourceTree = "<group>"; };
+		F25DD4322967148600AE63CF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F25DD43429671AAB00AE63CF /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		F25DD436296722B100AE63CF /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
+		F25DF261296B71A000100728 /* MenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
+		F25DF263296B738100100728 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		F2D94E6D2964A7A6001C44F3 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +106,10 @@
 			children = (
 				F2011E742963530800ECBE32 /* Info.plist */,
 				F2011E4B29633C4700ECBE32 /* RiveAppBELIEVEApp.swift */,
-				F2011E772963701500ECBE32 /* LoginView */,
-				F2011E782963702E00ECBE32 /* Models */,
-				F2011E7F2963808D00ECBE32 /* Extensions.swift */,
+				F2011E7A2963708B00ECBE32 /* ViewModel */,
+				F2011E792963703A00ECBE32 /* Views */,
+				F25DD42929663B2900AE63CF /* Model */,
+				F2011E782963702E00ECBE32 /* Styles */,
 				F2011E4F29633C4900ECBE32 /* Assets.xcassets */,
 				F2011E6D296352EA00ECBE32 /* Fonts */,
 				F2011E5929633CA000ECBE32 /* RiveAssets */,
@@ -129,28 +150,22 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		F2011E772963701500ECBE32 /* LoginView */ = {
-			isa = PBXGroup;
-			children = (
-				F2011E7A2963708B00ECBE32 /* ViewModel */,
-				F2011E792963703A00ECBE32 /* Views */,
-			);
-			path = LoginView;
-			sourceTree = "<group>";
-		};
-		F2011E782963702E00ECBE32 /* Models */ = {
+		F2011E782963702E00ECBE32 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
 				F2011E75296353FA00ECBE32 /* CustomFont.swift */,
 				F2011E7D29637DD800ECBE32 /* CustomTextField.swift */,
+				F2011E7F2963808D00ECBE32 /* Extensions.swift */,
 			);
-			path = Models;
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		F2011E792963703A00ECBE32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F2011E4D29633C4700ECBE32 /* ContentView.swift */,
+				F25DD439296741BE00AE63CF /* Navigation */,
+				F25DD4382967419E00AE63CF /* Components */,
+				F25DD4322967148600AE63CF /* HomeView.swift */,
 				F2011E6B29633CE900ECBE32 /* OnboardingView.swift */,
 				F2011E7B29637ADF00ECBE32 /* SignInView.swift */,
 			);
@@ -164,6 +179,37 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		F25DD42929663B2900AE63CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F25DF263296B738100100728 /* MenuItem.swift */,
+				F25DF261296B71A000100728 /* MenuItems.swift */,
+				F25DD42A29663B2900AE63CF /* CourseSection.swift */,
+				F25DD42B29663B2900AE63CF /* Course.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F25DD4382967419E00AE63CF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F25DD436296722B100AE63CF /* MenuRow.swift */,
+				F25DD42E29663B5200AE63CF /* VCard.swift */,
+				F25DD4302967137600AE63CF /* HCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F25DD439296741BE00AE63CF /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F2011E4D29633C4700ECBE32 /* ContentView.swift */,
+				F25DD43429671AAB00AE63CF /* SideMenuView.swift */,
+				F2D94E6D2964A7A6001C44F3 /* TabBar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,6 +220,7 @@
 				F2011E4429633C4700ECBE32 /* Sources */,
 				F2011E4529633C4700ECBE32 /* Frameworks */,
 				F2011E4629633C4700ECBE32 /* Resources */,
+				F280B32A296C1C6A00311DAD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -245,18 +292,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F280B32A296C1C6A00311DAD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2011E4429633C4700ECBE32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25DF264296B738100100728 /* MenuItem.swift in Sources */,
+				F25DD4312967137600AE63CF /* HCard.swift in Sources */,
+				F25DF262296B71A000100728 /* MenuItems.swift in Sources */,
 				F2011E6C29633CE900ECBE32 /* OnboardingView.swift in Sources */,
+				F25DD4332967148600AE63CF /* HomeView.swift in Sources */,
 				F2011E76296353FA00ECBE32 /* CustomFont.swift in Sources */,
+				F25DD42D29663B2900AE63CF /* Course.swift in Sources */,
 				F2011E7E29637DD800ECBE32 /* CustomTextField.swift in Sources */,
+				F2D94E6E2964A7A6001C44F3 /* TabBar.swift in Sources */,
+				F25DD42F29663B5200AE63CF /* VCard.swift in Sources */,
+				F25DD43529671AAB00AE63CF /* SideMenuView.swift in Sources */,
 				F2011E4E29633C4700ECBE32 /* ContentView.swift in Sources */,
 				F2011E4C29633C4700ECBE32 /* RiveAppBELIEVEApp.swift in Sources */,
 				F2011E7C29637ADF00ECBE32 /* SignInView.swift in Sources */,
+				F25DD42C29663B2900AE63CF /* CourseSection.swift in Sources */,
 				F2011E802963808D00ECBE32 /* Extensions.swift in Sources */,
+				F25DD437296722B100AE63CF /* MenuRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
